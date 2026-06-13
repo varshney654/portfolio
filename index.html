@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ajay Varshney | Software Engineer</title>
+    <meta name="description" content="Portfolio of Ajay Varshney, Computer Science Engineering Student & Full Stack Developer." />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- Particles Background Container -->
+    <div id="tsparticles"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top glass-nav" id="navbar">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="#">A.Varshney</a>
+        <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+            <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+            <li class="nav-item"><a class="nav-link" href="#timeline">Timeline</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero d-flex align-items-center min-vh-100">
+      <div class="container">
+        <div class="row align-items-center justify-content-between">
+          <div class="col-lg-7 hero-content order-2 order-lg-1 mt-5 mt-lg-0">
+            <span class="badge premium-badge mb-3">Available for Hire</span>
+            <h1 class="hero-title mb-3">Hi, I'm <span class="gradient-text">Ajay Varshney</span></h1>
+            <h2 class="hero-subtitle mb-4">Computer Science Engineering Student | Full Stack Developer | DevOps Enthusiast | Cloud Learner</h2>
+            <p class="hero-desc mb-5">
+              Passionate Computer Science Engineering student focused on Full Stack Development, Cloud Computing, and DevOps. Dedicated to building scalable applications, solving real-world problems, and continuously learning modern technologies.
+            </p>
+            <div class="hero-buttons d-flex gap-3 flex-wrap">
+              <a href="#projects" class="btn btn-primary premium-btn">View Projects</a>
+              <a href="/AjayVarshney_CSE_GLAU.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-outline premium-btn-outline">Download Resume</a>
+              <a href="#contact" class="btn btn-ghost">Contact Me <i class="fa-solid fa-arrow-right ms-2"></i></a>
+            </div>
+            <div class="social-links mt-5">
+              <a href="https://github.com/varshney654" target="_blank" class="social-icon"><i class="fa-brands fa-github"></i></a>
+              <a href="https://www.linkedin.com/in/ajay-varshney-59a693288/" target="_blank" class="social-icon"><i class="fa-brands fa-linkedin-in"></i></a>
+              <a href="mailto:ajayvarshney2429@gmail.com" class="social-icon"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+          </div>
+          <div class="col-lg-4 order-1 order-lg-2 hero-image-col">
+            <div class="hero-image-wrapper">
+              <!-- Using the generated placeholder or a generic professional silhouette if needed. For now using the local AI image we'll assume is copied or replaced later, or a generic placeholder URL -->
+              <img src="/profile.jpg" alt="Ajay Varshney" class="hero-img img-fluid" id="profile-img">
+              <div class="glow-effect"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats-section py-5 glass-section">
+      <div class="container">
+        <div class="row text-center g-4">
+          <div class="col-6 col-md-3 stat-item">
+            <h3 class="stat-number gradient-text"><span class="counter" data-target="150">0</span>+</h3>
+            <p class="stat-label">DSA Problems Solved</p>
+          </div>
+          <div class="col-6 col-md-3 stat-item">
+            <h3 class="stat-number gradient-text"><span class="counter" data-target="2">0</span>+</h3>
+            <p class="stat-label">Major Projects</p>
+          </div>
+          <div class="col-6 col-md-3 stat-item">
+            <h3 class="stat-number gradient-text"><span class="counter" data-target="15">0</span>+</h3>
+            <p class="stat-label">Technologies Learned</p>
+          </div>
+          <div class="col-6 col-md-3 stat-item">
+            <h3 class="stat-number gradient-text"><span class="counter" data-target="4">0</span></h3>
+            <p class="stat-label">Years Engineering</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about py-6">
+      <div class="container">
+        <div class="section-header text-center mb-5">
+          <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
+          <div class="section-line"></div>
+        </div>
+        <div class="row align-items-center">
+          <div class="col-lg-6 about-text">
+            <p class="lead text-light mb-4">I am a Computer Science undergraduate at GLA University with practical experience in Full Stack Development, REST APIs, CI/CD Pipelines, Cloud Computing, and Software Engineering principles.</p>
+            <p class="text-muted">I enjoy transforming ideas into scalable applications and continuously improving my technical skills through project development, problem-solving, and hands-on learning.</p>
+            <p class="text-muted mb-5">My goal is to become a highly skilled Software Engineer capable of designing reliable, efficient, and impactful software solutions.</p>
+            
+            <div class="education-card glass-card p-4">
+              <h4 class="mb-3"><i class="fa-solid fa-graduation-cap text-primary me-2"></i> Education</h4>
+              <div class="edu-item border-bottom border-secondary pb-3 mb-3">
+                <div class="d-flex justify-content-between align-items-center mb-1">
+                  <h5 class="mb-0">B.Tech in Computer Science</h5>
+                  <span class="badge premium-badge">2023 – 2027</span>
+                </div>
+                <p class="text-primary mb-1">GLA University, Mathura</p>
+                <p class="text-muted small mb-0">Current CPI: 7.05 / 10</p>
+              </div>
+              <div class="edu-item">
+                <div class="d-flex justify-content-between align-items-center mb-1">
+                  <h5 class="mb-0">Class XII</h5>
+                  <span class="badge premium-badge">2023</span>
+                </div>
+                <p class="text-primary mb-0">Anglo Vedic Senior Secondary School</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-5 offset-lg-1 mt-5 mt-lg-0">
+            <div class="services-card glass-card p-4">
+              <h4 class="mb-4 text-center">Services & Focus</h4>
+              <ul class="list-unstyled service-list">
+                <li><i class="fa-solid fa-check text-primary me-3"></i> Full Stack Development</li>
+                <li><i class="fa-solid fa-check text-primary me-3"></i> Frontend Development</li>
+                <li><i class="fa-solid fa-check text-primary me-3"></i> Backend Development</li>
+                <li><i class="fa-solid fa-check text-primary me-3"></i> REST API Development</li>
+                <li><i class="fa-solid fa-check text-primary me-3"></i> DevOps Automation</li>
+                <li><i class="fa-solid fa-check text-primary me-3"></i> Cloud Deployment</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills py-6 glass-section">
+      <div class="container">
+        <div class="section-header text-center mb-5">
+          <h2 class="section-title">Technical <span class="gradient-text">Skills</span></h2>
+          <div class="section-line"></div>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-3">
+            <div class="skill-card glass-card text-center p-4 h-100">
+              <div class="skill-icon mb-3"><i class="fa-solid fa-code"></i></div>
+              <h4>Languages</h4>
+              <p class="text-muted mt-3">Java, C#, JavaScript, SQL</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="skill-card glass-card text-center p-4 h-100">
+              <div class="skill-icon mb-3"><i class="fa-brands fa-react"></i></div>
+              <h4>Frontend</h4>
+              <p class="text-muted mt-3">HTML5, CSS3, Bootstrap, React, Responsive Design</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="skill-card glass-card text-center p-4 h-100">
+              <div class="skill-icon mb-3"><i class="fa-solid fa-server"></i></div>
+              <h4>Backend</h4>
+              <p class="text-muted mt-3">ASP.NET Core, REST APIs, MongoDB, MySQL</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="skill-card glass-card text-center p-4 h-100">
+              <div class="skill-icon mb-3"><i class="fa-brands fa-aws"></i></div>
+              <h4>DevOps & Cloud</h4>
+              <p class="text-muted mt-3">Jenkins, AWS EC2, CI/CD, Git/GitHub, Docker Basics</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects py-6">
+      <div class="container">
+        <div class="section-header text-center mb-5">
+          <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+          <div class="section-line"></div>
+        </div>
+        <div class="row g-5">
+          <!-- Project 1 -->
+          <div class="col-lg-6">
+            <div class="project-card glass-card overflow-hidden h-100">
+              <div class="project-content p-5">
+                <div class="d-flex justify-content-between align-items-center mb-4">
+                  <h3 class="mb-0">Smart Attendance System</h3>
+                  <a href="https://github.com/varshney654/Smart-Attendance" class="project-link" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github fs-4"></i></a>
+                </div>
+                <p class="text-muted mb-4">A full-stack attendance management platform for educational and organizational environments featuring Face Recognition Attendance, JWT Authentication, and Role-Based Access Control.</p>
+                <div class="tech-stack d-flex flex-wrap gap-2 mb-4">
+                  <span class="tech-badge">React</span>
+                  <span class="tech-badge">ASP.NET Core</span>
+                  <span class="tech-badge">MongoDB</span>
+                  <span class="tech-badge">JWT</span>
+                </div>
+                <ul class="project-features list-unstyled text-muted small mb-4">
+                  <li><i class="fa-solid fa-arrow-right text-primary me-2"></i> Multiple Dashboards (Admin, Employee, Student)</li>
+                  <li><i class="fa-solid fa-arrow-right text-primary me-2"></i> Attendance & Analytics Reports</li>
+                  <li><i class="fa-solid fa-arrow-right text-primary me-2"></i> REST API Integration</li>
+                </ul>
+                <a href="https://github.com/varshney654/Smart-Attendance" class="btn btn-outline premium-btn-outline w-100" target="_blank" rel="noopener noreferrer">View Project</a>
+              </div>
+            </div>
+          </div>
+          <!-- Project 2 -->
+          <div class="col-lg-6">
+            <div class="project-card glass-card overflow-hidden h-100">
+              <div class="project-content p-5">
+                <div class="d-flex justify-content-between align-items-center mb-4">
+                  <h3 class="mb-0">CI/CD Microservices</h3>
+                  <a href="https://github.com/varshney654/JOVAC-CICD-pipeline-jenkins" class="project-link" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github fs-4"></i></a>
+                </div>
+                <p class="text-muted mb-4">Built and deployed a complete CI/CD workflow for microservices using Jenkins and AWS, featuring automated build processes, deployments, and a monitoring dashboard.</p>
+                <div class="tech-stack d-flex flex-wrap gap-2 mb-4">
+                  <span class="tech-badge">Jenkins</span>
+                  <span class="tech-badge">AWS EC2</span>
+                  <span class="tech-badge">Flask</span>
+                  <span class="tech-badge">Bash</span>
+                </div>
+                <ul class="project-features list-unstyled text-muted small mb-4">
+                  <li><i class="fa-solid fa-arrow-right text-primary me-2"></i> Jenkins Pipelines & GitHub Integration</li>
+                  <li><i class="fa-solid fa-arrow-right text-primary me-2"></i> AWS EC2 Deployment</li>
+                  <li><i class="fa-solid fa-arrow-right text-primary me-2"></i> Microservice Architecture</li>
+                </ul>
+                <a href="https://github.com/varshney654/JOVAC-CICD-pipeline-jenkins" class="btn btn-outline premium-btn-outline w-100" target="_blank" rel="noopener noreferrer">View Project</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="certifications py-6 glass-section">
+      <div class="container">
+        <div class="section-header text-center mb-5">
+          <h2 class="section-title">Professional <span class="gradient-text">Certifications</span></h2>
+          <div class="section-line"></div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="cert-card glass-card p-4 d-flex align-items-center flex-column flex-md-row gap-4">
+              <div class="cert-icon">
+                <i class="fa-solid fa-award text-warning" style="font-size: 4rem;"></i>
+              </div>
+              <div class="cert-info text-center text-md-start">
+                <h3 class="mb-2">DevOps & Cloud Computing Course</h3>
+                <p class="text-primary mb-2">GLA University in collaboration with Coding Blocks</p>
+                <div class="tech-stack d-flex flex-wrap gap-2 justify-content-center justify-content-md-start mb-4">
+                  <span class="tech-badge">Jenkins</span>
+                  <span class="tech-badge">AWS</span>
+                  <span class="tech-badge">CI/CD</span>
+                  <span class="tech-badge">Git</span>
+                </div>
+                <div class="d-flex justify-content-center justify-content-md-start gap-3 flex-wrap">
+                  <a href="/DevOps_Certificate.pdf" class="btn btn-primary premium-btn btn-sm" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-certificate me-2"></i> View Certificate</a>
+                  <a href="/DevOps_Certificate.pdf" class="btn btn-outline premium-btn-outline btn-sm" download="AjayVarshney_DevOps_Certificate.pdf"><i class="fa-solid fa-download me-2"></i> Download</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Resume Section -->
+    <section id="resume" class="resume py-6">
+      <div class="container">
+        <div class="section-header text-center mb-5">
+          <h2 class="section-title">My <span class="gradient-text">Resume</span></h2>
+          <div class="section-line"></div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-lg-10">
+            <div class="glass-card p-4 p-md-5 text-center">
+              <i class="fa-regular fa-file-pdf text-danger mb-4" style="font-size: 5rem;"></i>
+              <h3 class="mb-4">Looking for a detailed breakdown of my experience?</h3>
+              <div class="d-flex justify-content-center gap-3 flex-wrap">
+                <!-- Using a placeholder href, recruiter can click to view/download -->
+                <a href="/AjayVarshney_CSE_GLAU.pdf" class="btn btn-primary premium-btn" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-eye me-2"></i> View Resume</a>
+                <a href="/AjayVarshney_CSE_GLAU.pdf" class="btn btn-outline premium-btn-outline" download="AjayVarshney_Resume.pdf"><i class="fa-solid fa-download me-2"></i> Download PDF</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Coding Profiles Section (GitHub & LeetCode) -->
+    <section id="coding-profiles" class="coding-profiles py-6 glass-section">
+      <div class="container">
+        <div class="section-header text-center mb-5">
+          <h2 class="section-title">Coding <span class="gradient-text">Profiles</span></h2>
+          <div class="section-line"></div>
+        </div>
+        <div class="row g-4 justify-content-center">
+          <!-- GitHub Card -->
+          <div class="col-md-6 col-lg-4">
+            <div class="profile-card glass-card p-5 h-100 text-center">
+              <i class="fa-brands fa-github mb-3" style="font-size: 4rem; color: #fff;"></i>
+              <h3 class="mb-3">GitHub Stats</h3>
+              <ul class="list-unstyled text-muted mb-4 text-start d-inline-block">
+                <li><i class="fa-solid fa-code-branch text-primary me-2"></i> Multiple Active Repositories</li>
+                <li><i class="fa-solid fa-star text-warning me-2"></i> Consistent Contributions</li>
+                <li><i class="fa-solid fa-code text-info me-2"></i> C#, JavaScript, Python, HTML/CSS</li>
+              </ul>
+              <div>
+                <a href="https://github.com/varshney654" class="btn btn-outline premium-btn-outline w-100" target="_blank" rel="noopener noreferrer">Visit GitHub Profile</a>
+              </div>
+            </div>
+          </div>
+          <!-- LeetCode Card -->
+          <div class="col-md-6 col-lg-4">
+            <div class="profile-card glass-card p-5 h-100 text-center">
+              <i class="fa-solid fa-code mb-3" style="font-size: 4rem; color: #FFA116;"></i>
+              <h3 class="mb-3">LeetCode Journey</h3>
+              <ul class="list-unstyled text-muted mb-4 text-start d-inline-block">
+                <li><i class="fa-solid fa-check-circle text-success me-2"></i> 150+ Problems Solved</li>
+                <li><i class="fa-solid fa-brain text-purple me-2"></i> Consistent Problem Solving</li>
+                <li><i class="fa-solid fa-trophy text-warning me-2"></i> Strong DSA Foundation</li>
+              </ul>
+              <div>
+                <a href="https://leetcode.com/u/AjayVarshney29/" class="btn btn-outline premium-btn-outline w-100" target="_blank" rel="noopener noreferrer">Visit LeetCode Profile</a>
+              </div>
+            </div>
+          </div>
+          <!-- LinkedIn Card -->
+          <div class="col-md-6 col-lg-4">
+            <div class="profile-card glass-card p-5 h-100 text-center">
+              <i class="fa-brands fa-linkedin mb-3" style="font-size: 4rem; color: #0077b5;"></i>
+              <h3 class="mb-3">LinkedIn Network</h3>
+              <ul class="list-unstyled text-muted mb-4 text-start d-inline-block">
+                <li><i class="fa-solid fa-user-tie text-primary me-2"></i> Professional Connections</li>
+                <li><i class="fa-solid fa-briefcase text-info me-2"></i> Career Updates</li>
+                <li><i class="fa-solid fa-handshake text-warning me-2"></i> Open to Opportunities</li>
+              </ul>
+              <div>
+                <a href="https://www.linkedin.com/in/ajay-varshney-59a693288/" class="btn btn-outline premium-btn-outline w-100" target="_blank" rel="noopener noreferrer">Visit LinkedIn Profile</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Timeline Section -->
+    <section id="timeline" class="timeline-section py-6 glass-section">
+      <div class="container">
+        <div class="section-header text-center mb-5">
+          <h2 class="section-title">My <span class="gradient-text">Journey</span></h2>
+          <div class="section-line"></div>
+        </div>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content glass-card p-4">
+              <span class="badge premium-badge mb-2">2026</span>
+              <h4 class="mb-2">Preparing for the Future</h4>
+              <p class="text-muted mb-0">Actively preparing for Software Engineering roles and placements at top technology companies.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content glass-card p-4">
+              <span class="badge premium-badge mb-2">2025</span>
+              <h4 class="mb-2">Advanced Projects & DevOps</h4>
+              <p class="text-muted mb-0">Built the Smart Attendance System and completed DevOps & Cloud Computing Training. Developed CI/CD Pipelines using Jenkins and AWS.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content glass-card p-4">
+              <span class="badge premium-badge mb-2">2024</span>
+              <h4 class="mb-2">Foundations & Web Dev</h4>
+              <p class="text-muted mb-0">Focused on core programming fundamentals, DSA, and Full Stack Web Development.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content glass-card p-4">
+              <span class="badge premium-badge mb-2">2023</span>
+              <h4 class="mb-2">The Beginning</h4>
+              <p class="text-muted mb-0">Started B.Tech in Computer Science Engineering at GLA University, Mathura.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact py-6">
+      <div class="container">
+        <div class="section-header text-center mb-5">
+          <h2 class="section-title">Get In <span class="gradient-text">Touch</span></h2>
+          <div class="section-line"></div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="contact-card glass-card p-5 text-center">
+              <h3 class="mb-4">Let's build something amazing together!</h3>
+              <p class="text-muted mb-5">I am currently looking for software engineering internships and full-time roles. Whether you have a question or just want to say hi, I'll try my best to get back to you!</p>
+              
+              <div class="d-flex flex-column flex-md-row justify-content-center gap-4 mb-5">
+                <a href="mailto:ajayvarshney2429@gmail.com" class="contact-link">
+                  <div class="contact-icon-wrapper"><i class="fa-solid fa-envelope"></i></div>
+                  <span>ajayvarshney2429@gmail.com</span>
+                </a>
+                <a href="tel:+918273296827" class="contact-link">
+                  <div class="contact-icon-wrapper"><i class="fa-solid fa-phone"></i></div>
+                  <span>+91 8273296827</span>
+                </a>
+              </div>
+              
+              <a href="mailto:ajayvarshney2429@gmail.com" class="btn btn-primary premium-btn btn-lg px-5 py-3">Say Hello</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer py-5 glass-section text-center">
+      <div class="container">
+        <h4 class="mb-4">Ajay Varshney</h4>
+        <div class="social-links mt-3 mb-4 justify-content-center">
+          <a href="https://github.com/varshney654" target="_blank" class="social-icon"><i class="fa-brands fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/ajay-varshney-59a693288/" target="_blank" class="social-icon"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="mailto:ajayvarshney2429@gmail.com" class="social-icon"><i class="fa-solid fa-envelope"></i></a>
+        </div>
+        <p class="mb-1 text-muted">&copy; 2026 Ajay Varshney. All rights reserved.</p>
+        <p class="mb-0 small text-muted">Built with React + Vite</p>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.css"></script>
+    <!-- tsParticles -->
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles-engine@2.12.0/tsparticles.engine.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles-basic@2.12.0/tsparticles.basic.min.js"></script>
+    <!-- ScrollReveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    
+    <!-- Floating Hire Me Button -->
+    <a href="mailto:ajayvarshney2429@gmail.com" class="floating-hire-btn">
+      <i class="fa-solid fa-envelope me-2"></i> Hire Me
+    </a>
+
+    <!-- Custom JS -->
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>
