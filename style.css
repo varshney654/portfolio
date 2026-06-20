@@ -359,6 +359,8 @@ a {
 /* Projects */
 .project-card {
   position: relative;
+  display: flex;
+  flex-direction: column;
 }
 
 .project-card::before {
@@ -369,15 +371,38 @@ a {
   opacity: 0;
   transition: opacity 0.3s ease;
   z-index: 0;
+  pointer-events: none;
 }
 
 .project-card:hover::before {
   opacity: 1;
 }
 
+.project-img-container {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  border-bottom: 1px solid var(--glass-border);
+}
+
+.project-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.project-card:hover .project-img {
+  transform: scale(1.05);
+}
+
 .project-content {
   position: relative;
   z-index: 1;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .project-link {
@@ -447,7 +472,7 @@ a {
 }
 
 /* Contact */
-.contact-icon-wrapper {
+.contact-info .contact-icon-wrapper {
   width: 50px;
   height: 50px;
   background: rgba(0, 240, 255, 0.1);
@@ -457,38 +482,107 @@ a {
   align-items: center;
   justify-content: center;
   font-size: 1.2rem;
-  margin: 0 auto 15px;
   transition: all 0.3s ease;
 }
 
-.contact-link {
-  color: var(--text-primary);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.contact-link:hover {
-  color: var(--accent-blue);
-}
-
-.contact-link:hover .contact-icon-wrapper {
+.contact-info:hover .contact-icon-wrapper {
   background: var(--accent-blue);
   color: #000;
-  transform: translateY(-5px);
+  transform: scale(1.1);
 }
 
-/* Certifications */
-.cert-icon {
-  width: 100px;
-  height: 100px;
-  background: rgba(255, 193, 7, 0.1);
-  border-radius: 50%;
+.hover-primary:hover {
+  color: var(--accent-blue) !important;
+}
+
+.glass-input {
+  background: rgba(255, 255, 255, 0.05) !important;
+  border: 1px solid var(--glass-border) !important;
+  color: var(--text-primary) !important;
+  backdrop-filter: blur(5px);
+}
+
+.glass-input:focus {
+  background: rgba(255, 255, 255, 0.08) !important;
+  border-color: var(--accent-blue) !important;
+  box-shadow: 0 0 15px rgba(0, 240, 255, 0.2) !important;
+}
+
+.glass-input::placeholder {
+  color: transparent !important;
+}
+
+.glass-input:focus::placeholder {
+  color: rgba(255, 255, 255, 0.3) !important;
+}
+
+.form-floating > label {
+  color: var(--text-secondary);
+}
+
+.form-floating > .form-control:focus ~ label,
+.form-floating > .form-control:not(:placeholder-shown) ~ label {
+  color: var(--accent-blue);
+  background-color: transparent !important;
+}
+
+/* Certifications Gallery */
+.cert-filters .nav-link {
+  color: var(--text-secondary);
+  border-radius: 30px;
+  padding: 8px 20px;
+  margin: 0 5px;
+  border: 1px solid var(--glass-border);
+  background: var(--glass-bg);
+  transition: all 0.3s ease;
+}
+
+.cert-filters .nav-link.active,
+.cert-filters .nav-link:hover {
+  background: rgba(0, 240, 255, 0.1);
+  color: var(--accent-blue);
+  border-color: var(--accent-blue);
+}
+
+.cert-gallery-card {
+  padding: 2px;
+  display: flex;
+  flex-direction: column;
+}
+
+.cert-gallery-card:hover .cert-card-img {
+  transform: scale(1.05);
+}
+
+.cert-img-wrapper {
+  background: rgba(0,0,0,0.3);
+  height: 200px;
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-shrink: 0;
-  border: 1px solid rgba(255, 193, 7, 0.3);
+  border-bottom: 1px solid var(--glass-border);
+  border-radius: 16px 16px 0 0;
+}
+
+.cert-card-img {
+  transition: transform 0.5s ease;
+}
+
+.whatsapp-btn {
+  background-color: #25D366;
+  color: #fff !important;
+  border-color: #25D366;
+}
+
+.whatsapp-btn:hover {
+  background-color: #128C7E;
+  border-color: #128C7E;
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(37, 211, 102, 0.4);
+}
+
+.whatsapp-icon:hover i {
+  color: #25D366 !important;
 }
 
 /* Profiles & Resume */

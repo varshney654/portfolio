@@ -80,11 +80,12 @@ document.addEventListener("DOMContentLoaded", () => {
   sr.reveal('.services-card', { delay: 400, origin: 'right' });
   sr.reveal('.skill-card', { delay: 200, interval: 100 });
   sr.reveal('.project-card', { delay: 300, interval: 200 });
-  sr.reveal('.cert-card', { delay: 300, origin: 'bottom' });
+  sr.reveal('.cert-gallery-card', { delay: 200, interval: 100, origin: 'bottom' });
   sr.reveal('.resume .glass-card', { delay: 300, origin: 'bottom', scale: 0.95 });
   sr.reveal('.profile-card', { delay: 300, interval: 200 });
   sr.reveal('.timeline-item', { delay: 200, interval: 150 });
-  sr.reveal('.contact-card', { delay: 300, distance: '60px' });
+  sr.reveal('.contact-info', { delay: 300, origin: 'left' });
+  sr.reveal('.contact-form-card', { delay: 400, origin: 'right' });
 
   // 4. Animated Statistics Counter
   const counters = document.querySelectorAll('.counter');
@@ -123,3 +124,15 @@ document.addEventListener("DOMContentLoaded", () => {
     observer.observe(statsSection);
   }
 });
+
+// Certificate Lightbox Functionality
+window.openCertificate = function(url, isPdf) {
+  if (isPdf) {
+      window.open(url, '_blank');
+  } else {
+      document.getElementById('certModalImg').src = url;
+      // Use bootstrap modal
+      const certModal = new bootstrap.Modal(document.getElementById('certModal'));
+      certModal.show();
+  }
+};
